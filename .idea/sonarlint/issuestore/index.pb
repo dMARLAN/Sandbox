@@ -17,7 +17,5 @@ h
 src/Main.java,9\2\924f089edb4af5ee45c8a9d1129cd28e2b368138
 g
 7DesignPatterns/src/creationalpatterns/bridge/Radio.java,8\9\89b88229b043c9325956984e407d0952c3e16da5
-h
-8InterviewQuestions/src/longestcommonprefix/Solution.java,c\b\cbb10ef13dc105df8ef36de6f74c0ce33fa05f44
 [
 +InterviewQuestions/src/twosum/Solution.java,d\a\da89742b90c33af406c659918231e9bfc12c0885

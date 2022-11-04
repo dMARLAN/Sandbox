@@ -1,7 +1,5 @@
 package longestcommonprefix;
 
-import java.util.HashSet;
-
 public class Solution {
     public static void main(String[] args) {
 
@@ -11,23 +9,27 @@ public class Solution {
     }
 
     public static String longestCommonPrefix(String[] strs) {
-        if (strs.length == 0) {
+        if (strs == null || strs.length == 0) {
             return "";
         }
 
-        for (int i = 0; i < strs.length; i++) {
-            if (strs[i].length() == 0) {
-                return "";
+        String lexographicallyFirst = strs[0];
+        String lexographicallyLast = strs[0];
+        for (String string : strs) {
+            if (lexographicallyFirst.compareTo(string) > 0) {
+                lexographicallyFirst = string;
             }
-
-            HashSet<Character> set = new HashSet<>();
-
-            for (int j = 0; j < strs[i].length(); j++) {
-                set.add(strs[j].charAt(i));
+            if (lexographicallyLast.compareTo(string) < 0) {
+                lexographicallyLast = string;
             }
-
         }
 
-        return "";
+        int count = 0;
+        for (int i = 0; i < lexographicallyFirst.length(); i++) {
+            if (lexographicallyFirst.charAt(count) == lexographicallyLast.charAt(count)) {
+                count++;
+            }
+        }
+        return count == 0 ? "" : lexographicallyFirst.substring(0, count);
     }
 }
