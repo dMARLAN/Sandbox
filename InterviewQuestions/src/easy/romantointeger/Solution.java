@@ -1,4 +1,4 @@
-package romantointeger;
+package easy.romantointeger;
 
 public class Solution {
     public static void main(String[] args) {
@@ -7,6 +7,7 @@ public class Solution {
         System.out.println(romanToInt("MCMXCIV")); // Expected: 1994
     }
 
+    @SuppressWarnings("squid:S127")
     public static int romanToInt(String s) {
         char[] chars = s.toCharArray();
         int total = 0;

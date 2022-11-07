@@ -1,4 +1,4 @@
-package validpalindrome;
+package easy.validpalindrome;
 
 public class Solution {
     public static void main(String[] args) {
@@ -7,6 +7,7 @@ public class Solution {
         System.out.println(isPalindrome("0z;z   ; 0")); // Expected: true
     }
 
+    @SuppressWarnings("squid:S127")
     public static boolean isPalindrome(String s) {
         char[] c = s.toCharArray();
         for (int i = 0, j = c.length - 1; i < j; ) {

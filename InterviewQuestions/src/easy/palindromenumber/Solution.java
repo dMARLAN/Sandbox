@@ -1,4 +1,4 @@
-package palindromenumber;
+package easy.palindromenumber;
 
 public class Solution {
     public static void main(String[] args) throws AssertionError {
@@ -21,6 +21,7 @@ public class Solution {
         return true;
     }
 
+    @SuppressWarnings("unused")
     public static boolean isPalindrome2(int x) {
         if (x < 0 || (x % 10 == 0 && x != 0)) {
             return false;
