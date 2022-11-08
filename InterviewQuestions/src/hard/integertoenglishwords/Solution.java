@@ -1,4 +1,4 @@
-package hard.intergertoenglishword;
+package hard.integertoenglishwords;
 
 public class Solution {
 
